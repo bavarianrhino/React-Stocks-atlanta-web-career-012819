@@ -13,9 +13,7 @@ class MainContainer extends Component {
     }
 
     mapPortfolioStocks = () => {
-        return this.props.stocks.map((stock) => {
-            (stock.inPortfolio) ? <Stock key={stock.id} stock={stock} /> : null
-        })
+        return this.props.stocks.map((stock) => {(stock.inPortfolio) ? <Stock key={stock.id} stock={stock} /> : null})
     }
 
     render() {
